@@ -35,6 +35,7 @@ class VerifyVersionCommand(install):
 
 install_requires = [
     "tentaclio",
+    "PyAthena==1.10.7",
 ]
 
 

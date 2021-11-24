@@ -47,9 +47,6 @@ format: ## Run black and isort
 unit: ## Run unit tests
 	pipenv run pytest tests/unit
 
-functional:
-	pipenv run pytest tests/functional/athena
-
 # Release
 package:
 	# create a source distribution
