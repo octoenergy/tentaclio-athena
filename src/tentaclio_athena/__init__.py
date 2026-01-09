@@ -1,4 +1,5 @@
-"""This package implements the tentaclio athena client """
+"""This package implements the tentaclio athena client"""
+
 from tentaclio import *  # noqa
 
 from .clients.athena_client import AthenaClient
