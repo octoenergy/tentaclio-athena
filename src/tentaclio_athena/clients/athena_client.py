@@ -20,7 +20,7 @@ class AthenaClient(sqla_client.SQLAlchemyClient):
     # Athena-specific fast query result retrieval:
 
     @decorators.check_conn
-    def get_df(self, sql_query: str, params: dict = None, **kwargs) -> pd.DataFrame:
+    def get_df(self, sql_query: str, params: dict = {}, **kwargs) -> pd.DataFrame:
         """Run a raw SQL query and return a data frame."""
         raw_conn = self._get_raw_conn()
         raw_cursor = raw_conn.cursor(PandasCursor)

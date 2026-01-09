@@ -39,7 +39,7 @@ class TestAthenaClient:
     def test_get_df(self, mocker):
         url = "awsathena+rest://:@localhost"
         query = "SELECT * FROM bla"
-        params = None
+        params: dict = {}
 
         mock_raw_cursor = mocker.Mock()
         mock_raw_cursor.execute = mocker.Mock()
